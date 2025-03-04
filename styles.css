@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bbb;
+    margin: 0;
+}
+
+.trafikljus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lampa {
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    position: relative;
+}
+
+/* Röda lampan */
+.röd {
+    background-color: red;
+    border-color: brown;
+}
+
+.röd::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: pink;
+    bottom: 0;
+    left: 0;
+}
+
+/* Gula lampan */
+.gul {
+    background-color: yellow;
+    border-color: goldenrod;
+}
+
+.gul::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background-color: lightyellow;
+    bottom: 0;
+    right: 0;
+}
+
+/* Gröna lampan */
+.grön {
+    background-color: darkgreen;
+    border-color: green;
+}
+
+.grön::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    background-color: lightgreen;
+    bottom: 0;
+    left: 0;
+}
